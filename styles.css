@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --bg-light-grey: #eceef1;
+    --bg-dark-grey: #bdbec1;
+    --text-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+    background-color: var(--bg-light-grey);
+    margin-block: 3rem;
+    border-radius: 20px;
+    height: 90vh;
+    width: 580px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-container {
+    display: flex;
+    /* gap: 10px; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.img-container img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.img-container h1 {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 20px;
+    margin-block: 30px;
+}
+
+.box-container a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover {
+    box-shadow: 0 0 0 5px #fff;
+}
+
+.social-links-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.social-links-container a {
+    text-decoration: none;
+}
+
+.social-links-container i {
+    font-size: 1.7rem;
+    color: var(--text-color);
+}
+
+.qr-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px 15px 0;
+}
+
+.qr-container p {
+    font-size: 14px;
+    margin-bottom: -8px;
+    z-index: 1;
+}
+
+.qr-container img {
+    width: 150px;
+}
+
+/* Responsive media queries */
+
+@media (max-width: 768px) {
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .qr-container {
+        display: none;
+    }
+}
